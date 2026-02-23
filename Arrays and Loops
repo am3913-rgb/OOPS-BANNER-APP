@@ -1,0 +1,48 @@
+public class OOPSBannerUC4 {
+
+    public static void main(String[] args) {
+        printOOPSBanner();
+    }
+
+    public static void printOOPSBanner() {
+
+        
+        String[] bannerLines = {
+
+                String.join(" ",
+                        "OOOOO", "OOOOO",
+                        "PPPPP", "PPPPP",
+                        "SSSSS", "SSSSS"
+                ),
+
+                String.join(" ",
+                        "O   O", "O   O",
+                        "P   P", "P   P",
+                        "S", "S"
+                ),
+
+                String.join(" ",
+                        "O   O", "O   O",
+                        "PPPPP", "PPPPP",
+                        "SSSSS", "SSSSS"
+                ),
+
+                String.join(" ",
+                        "O   O", "O   O",
+                        "P", "P",
+                        "    S", "    S"
+                ),
+
+                String.join(" ",
+                        "OOOOO", "OOOOO",
+                        "P", "P",
+                        "SSSSS", "SSSSS"
+                )
+        };
+
+        
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
+    }
+}
